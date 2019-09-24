@@ -34,26 +34,26 @@ Sendo que apenas "**tags**" um campo opcional e "**time**" e "**date**" condicio
 para o index "**status_value** do json, deve-se usar o value de uma das opções abaixo
 ```
 [
-		{
-			"value" : "sem-agendamento",
-			"name" : "Sem Agendamento"
-		},
-		{
-			"value" : "agendado",
-			"name" : "Agendado"
-		},
-		{
-			"value" : "cancelado",
-			"name" : "Cancelado"
-		},
-		{
-			"value" : "finalizado",
-			"name" : "Finalizado"
-		},
-		{
-			"value" : "vestibular",
-			"name" : "Vestibular"
-		}
+	{
+		"value" : "sem-agendamento",
+		"name" : "Sem Agendamento"
+	},
+	{
+		"value" : "agendado",
+		"name" : "Agendado"
+	},
+	{
+		"value" : "cancelado",
+		"name" : "Cancelado"
+	},
+	{
+		"value" : "finalizado",
+		"name" : "Finalizado"
+	},
+	{
+		"value" : "vestibular",
+		"name" : "Vestibular"
+	}
 ]
 ```
 No caso de status "**agendado**" ou "**vestibular**", os campos "**date**" e "**time**" passam a ser obrigatórios pois são referentes a data e hora de agendamento dos mesmos.
@@ -65,18 +65,18 @@ O index "**leads**" do json é um array, sendo assim, um request poderá conter 
 ```
 {
 	"leads" : [{
-		  			//conteudo do lead 
-		  },
-		  {
-		  			//conteudo do lead 
-		  },
-		  {
-		  			//conteudo do lead 
-		  },
-		  {
-		  			//conteudo do lead 
-		  }
-		  ....
+	    	//conteudo do lead 
+	    },
+	    {
+	    	//conteudo do lead 
+	    },
+	    {
+	    	//conteudo do lead 
+	    },
+	    {
+	    	//conteudo do lead 
+	    }
+	    ....
 	}]
 }
 ```
