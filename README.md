@@ -1,6 +1,4 @@
-
-
-`##Documentação webhook Ezcore Leads
+##Documentação webhook Ezcore Leads
 
 para comunicar com o webhook Ezcore Leads CRM deve-se enviar um request POST
 para a seguinte rota, substituindo os respectivos parametros **client_id** e **secret_id** 
@@ -80,5 +78,3 @@ O index "**leads**" do json é um array, sendo assim, um request poderá conter 
 				  ....
 			}]
 	}
-
-`````
