@@ -80,3 +80,16 @@ O index "**leads**" do json é um array, sendo assim, um request poderá conter 
 	}]
 }
 ```
+
+
+Caso suas credenciais sejam de homologação você apenas receberá respostas positivas ou negativas, contendo o erro que deve ser corrigido no request em caso negativo e em todos os casos seguindo o seguinte padrão
+
+```
+{ 
+	"success" : true,
+	"message" : "lorem ispum",
+	"data" : null
+} 
+```
+
+sendo o conteudo de **success** ```true```oi ```false```, **message** uma mensagem referente ao request e **data** conteúdo de retorno caso seja necessário, o padrão sempre será ```null```
