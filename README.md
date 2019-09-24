@@ -21,7 +21,7 @@ deve-se enviar um json formatado com o exemplo abaixo
          "name" : "nome_do_lead",
          "cidade" : "cidade_do_lead",
          "city" : "cidade_do_lead",
-          "state" : "estado_do_lead",
+         "state" : "estado_do_lead",
          "course" : "curso_de_preferencia",
 	 "tags" : ["tag1","tag2","tag3"]
     }]
