@@ -1,11 +1,11 @@
 ## Documentação webhook Ezcore Leads
 
-para comunicar com o webhook Ezcore Leads CRM deve-se enviar um request POST
-para a seguinte rota, substituindo os respectivos parametros **client_id** e **secret_id** 
+para comunicar com o webhook Ezcore Leads CRM deve-se enviar um request **POST**
+para a seguinte rota, substituindo os respectivos parâmetros **client_id** e **secret_id** 
 
     http://leads.ezcore.com.br/api/integration/set/leads/{client_id}/{secret_key}
 
-deve-se enviar um json formatado com o exemplo abaixo
+deve-se enviar um **JSON** formatado com o exemplo abaixo
 ```
 {
      "leads" : [{
@@ -59,9 +59,9 @@ para o index "**status_value** do json, deve-se usar o value de uma das opções
 No caso de status "**agendado**" ou "**vestibular**", os campos "**date**" e "**time**" passam a ser obrigatórios pois são referentes a data e hora de agendamento dos mesmos.
 
 
-Toda e qualquer informação adicional pode ser incluida no json e o Ezcore Leads essa informação será cadastrada com campo adicional, acessivel durante a operação do lead.
+Toda e qualquer informação adicional pode ser incluída no json e o **Ezcore Leads** essa informação será cadastrada com campo adicional, acessível durante a operação do lead.
 
-O index "**leads**" do json é um array, sendo assim, um request poderá conter n leads em seu conteúdo e deverá ser organizado da seguinte forma neste caso:
+O index "**leads**" do json é um **array**, sendo assim, um request poderá conter N leads em seu conteúdo e deverá ser organizado da seguinte forma neste caso:
 ```
 {
 	"leads" : [{
@@ -92,4 +92,4 @@ Caso suas credenciais sejam de homologação você apenas receberá respostas po
 } 
 ```
 
-sendo o conteudo de **success** ```true```oi ```false```, **message** uma mensagem referente ao request e **data** conteúdo de retorno caso seja necessário, o padrão sempre será ```null```
+sendo o conteúdo de **success** ```true``` ou ```false```, **message** uma mensagem referente ao request e **data** conteúdo de retorno caso seja necessário, o padrão sempre será ```null```
