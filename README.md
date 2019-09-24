@@ -23,7 +23,7 @@ deve-se enviar um json formatado com o exemplo abaixo
          "city" : "cidade_do_lead",
           "state" : "estado_do_lead",
          "course" : "curso_de_preferencia",
-		 "tags" : ["tag1","tag2","tag3"]
+	 "tags" : ["tag1","tag2","tag3"]
     }]
 }
 ```
